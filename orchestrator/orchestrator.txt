@@ -1,0 +1,63 @@
+time="2021-07-27 23:36:42" level=info msg="Checking DB" database-path="orchestrator/datadir/orchestrator" prefix=node
+time="2021-07-27 23:36:42" level=debug msg="latest saved info from db" latestHeaderHash=0x0000000000000000000000000000000000000000000000000000000000000000 latestSavedEpoch=0 latestVerifiedSlot=0 prefix=kv
+time="2021-07-27 23:36:42" level=warning msg="Removing database" prefix=node
+time="2021-07-27 23:36:43" level=debug msg="latest saved info from db" latestHeaderHash=0x0000000000000000000000000000000000000000000000000000000000000000 latestSavedEpoch=0 latestVerifiedSlot=0 prefix=kv
+time="2021-07-27 23:36:43" level=info msg="Registered vanguard chain service" prefix=node vanguardGRPCUrl="127.0.0.1:4000"
+time="2021-07-27 23:36:43" level=info msg="Registered pandora chain service" pandoraHttpUrl="ws://127.0.0.1:8546" prefix=node
+time="2021-07-27 23:36:43" level=debug msg="Initializing consensus service" latestVerifiedSlot=0 prefix=consensus
+time="2021-07-27 23:36:43" level=info msg="Registered consensus service" prefix=node
+time="2021-07-27 23:36:43" level=debug msg="rpc server configuration" httpEnable=true httpListenAddr=0.0.0.0 httpPort=7877 prefix=node wsEnable=true wsListenerAddr=0.0.0.0 wsPort=7878
+time="2021-07-27 23:36:43" level=info msg="Registered RPC service" prefix=node
+time="2021-07-27 23:36:43" level=info msg="Starting orchestrator node" prefix=node version="Orchestrator/Unknown/Local build. Built at: Moments ago"
+time="2021-07-27 23:36:43" level=debug msg="Starting 4 services: [*vanguardchain.Service *pandorachain.Service *consensus.Service *rpc.Service]" prefix=registry
+time="2021-07-27 23:36:43" level=debug msg="Starting service type *vanguardchain.Service" prefix=registry
+time="2021-07-27 23:36:43" level=debug msg="Starting service type *pandorachain.Service" prefix=registry
+time="2021-07-27 23:36:43" level=debug msg="Starting service type *consensus.Service" prefix=registry
+time="2021-07-27 23:36:43" level=debug msg="Starting service type *rpc.Service" prefix=registry
+time="2021-07-27 23:36:43" level=debug msg="Waiting for the connection" prefix=panchain
+time="2021-07-27 23:36:43" level=warning msg="You are using an insecure gRPC connection. If you are running your beacon node and validator on the same machines, you can ignore this message. If you want to know how to enable secure connections, see: https://docs.prylabs.network/docs/prysm-usage/secure-grpc" prefix=vanguard-client
+time="2021-07-27 23:36:43" level=info msg="Starting consensus service" prefix=consensus
+time="2021-07-27 23:36:43" level=info msg="HTTP server started" cors= endpoint=[::]:7877 prefix= vhosts=
+time="2021-07-27 23:36:43" level=info msg="WebSocket enabled" prefix=rpc url="ws://[::]:7878"
+time="2021-07-27 23:36:43" level=info msg="Successfully subscribed to chain header event" prefix=vanguard-client
+time="2021-07-27 23:36:43" level=debug msg="Subscribed to new pending vanguard block" prefix=vanguard-chain
+time="2021-07-27 23:36:43" level=info msg="Successfully subscribed to StreamMinimalConsensusInfo event" prefix=vanguard-client
+time="2021-07-27 23:36:43" level=debug msg="Subscribed to minimal consensus info" prefix=vanguard-chain
+time="2021-07-27 23:36:43" level=debug msg="subscribed to pandora chain for pending block headers" filterCriteria=&{0x0000000000000000000000000000000000000000000000000000000000000000} prefix=panchain
+time="2021-07-27 23:36:43" level=info msg="Connected vanguard chain" prefix=vanguard-chain vanguardHttp="127.0.0.1:4000"
+time="2021-07-27 23:36:43" level=info msg="Connected and subscribed to pandora chain" endpoint="ws://127.0.0.1:8546" prefix=panchain
+time="2021-07-27 23:36:43" level=debug msg="Pandora chain service is starting" prefix=panchain
+time="2021-07-27 23:36:43" level=debug msg="Received new consensus info for next epoch" epoch=0 prefix=vanguard-chain
+time="2021-07-27 23:36:43" level=debug msg="Received new consensus info for next epoch" epoch=0 prefix=vanguard-chain
+time="2021-07-27 23:36:43" level=debug msg="Received new consensus info for next epoch" epoch=1 prefix=vanguard-chain
+time="2021-07-27 23:36:44" level=info msg="registered new subscriber for consensus info" fromEpoch=0 prefix=event
+time="2021-07-27 23:36:44" level=info msg="sending already known consensus info to subscriber" epoch=0 epochStartTime=1627407441 prefix=event
+time="2021-07-27 23:36:44" level=info msg="sending already known consensus info to subscriber" epoch=1 epochStartTime=1627407633 prefix=event
+time="2021-07-27 23:37:21" level=debug msg="Received new consensus info for next epoch" epoch=1 prefix=vanguard-chain
+time="2021-07-27 23:37:21" level=info msg="sending consensus info to subscriber" epoch=1 epochStartTime=1627407633 prefix=event
+time="2021-07-27 23:40:33" level=debug msg="Received new consensus info for next epoch" epoch=2 prefix=vanguard-chain
+time="2021-07-27 23:40:33" level=info msg="sending consensus info to subscriber" epoch=2 epochStartTime=1627407825 prefix=event
+time="2021-07-27 23:43:45" level=debug msg="Received new consensus info for next epoch" epoch=3 prefix=vanguard-chain
+time="2021-07-27 23:43:45" level=info msg="sending consensus info to subscriber" epoch=3 epochStartTime=1627408017 prefix=event
+time="2021-07-27 23:46:57" level=debug msg="Received new consensus info for next epoch" epoch=4 prefix=vanguard-chain
+time="2021-07-27 23:46:57" level=info msg="sending consensus info to subscriber" epoch=4 epochStartTime=1627408209 prefix=event
+time="2021-07-27 23:50:09" level=debug msg="Received new consensus info for next epoch" epoch=5 prefix=vanguard-chain
+time="2021-07-27 23:50:09" level=info msg="sending consensus info to subscriber" epoch=5 epochStartTime=1627408401 prefix=event
+time="2021-07-27 23:53:21" level=debug msg="Received new consensus info for next epoch" epoch=6 prefix=vanguard-chain
+time="2021-07-27 23:53:21" level=info msg="sending consensus info to subscriber" epoch=6 epochStartTime=1627408593 prefix=event
+time="2021-07-27 23:56:33" level=debug msg="Received new consensus info for next epoch" epoch=7 prefix=vanguard-chain
+time="2021-07-27 23:56:33" level=info msg="sending consensus info to subscriber" epoch=7 epochStartTime=1627408785 prefix=event
+time="2021-07-27 23:59:45" level=debug msg="Received new consensus info for next epoch" epoch=8 prefix=vanguard-chain
+time="2021-07-27 23:59:45" level=info msg="sending consensus info to subscriber" epoch=8 epochStartTime=1627408977 prefix=event
+time="2021-07-28 00:02:57" level=debug msg="Received new consensus info for next epoch" epoch=9 prefix=vanguard-chain
+time="2021-07-28 00:02:57" level=info msg="sending consensus info to subscriber" epoch=9 epochStartTime=1627409169 prefix=event
+time="2021-07-28 00:06:09" level=debug msg="Received new consensus info for next epoch" epoch=10 prefix=vanguard-chain
+time="2021-07-28 00:06:09" level=info msg="sending consensus info to subscriber" epoch=10 epochStartTime=1627409361 prefix=event
+time="2021-07-28 00:09:21" level=debug msg="Received new consensus info for next epoch" epoch=11 prefix=vanguard-chain
+time="2021-07-28 00:09:21" level=info msg="sending consensus info to subscriber" epoch=11 epochStartTime=1627409553 prefix=event
+time="2021-07-28 00:12:01" level=info msg="Got interrupt, shutting down..." prefix=node
+time="2021-07-28 00:12:01" level=info msg="Stopping orchestrator node" prefix=node
+time="2021-07-28 00:12:01" level=info msg="HTTP server stopped" endpoint=[::]:7877 prefix=rpc
+time="2021-07-28 00:12:01" level=info msg="HTTP server stopped" endpoint=[::]:7878 prefix=rpc
+time="2021-07-28 00:12:01" level=debug msg="Received cancelled context,closing existing consensus service" prefix=consensus
+time="2021-07-28 00:12:01" level=debug msg="Context closed, exiting goroutine" prefix=panchain

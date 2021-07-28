@@ -1,0 +1,45 @@
+lukso-network/pandora[Eth]
+NetworkId = 1994
+
+[Eth.Ethash]
+CacheDir = "ethash"
+CachesInMem = 2
+CachesOnDisk = 3
+DatasetDir = "/Users/atif/Workspace/lukso/network-deployment/geth/chaindata/.ethash"
+DatasetsInMem = 1
+DatasetsOnDisk = 2
+PowMode = 0
+
+
+[Eth.TxPool]
+Locals = []
+NoLocals = false
+Journal = "transactions.rlp"
+Rejournal = 3600000000000
+PriceLimit = 1
+PriceBump = 10
+AccountSlots = 16
+GlobalSlots = 4096
+AccountQueue = 64
+GlobalQueue = 1024
+Lifetime = 10800000000000
+
+[Node]
+DataDir = "/Users/atif/Workspace/lukso/network-deployment/geth/chaindata/"
+IPCPath = "geth.ipc"
+HTTPPort = 8545
+HTTPHost = "127.0.0.1"
+HTTPCors = ["*"]
+HTTPModules = ["net", "web3", "eth", "shh"]
+WSPort = 8546
+WSModules = ["net", "web3", "eth", "shh"]
+
+[Node.P2P]
+MaxPeers = 25
+NoDiscovery = false
+BootstrapNodes = []
+BootstrapNodesV5 = []
+StaticNodes = []
+TrustedNodes = []
+ListenAddr = ":30303"
+EnableMsgEvents = false
